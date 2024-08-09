@@ -1,0 +1,33 @@
+options:
+  verbose: false
+  output_dir: .
+  temperature: 298.15 * kelvin
+  pressure: 101.325 * kilopascal
+  minimize: false
+  number_of_equilibration_iterations: 1
+  default_number_of_iterations: 2000
+  default_nsteps_per_iteration: 500
+  start_from_trailblaze_samples: false
+  checkpoint_interval: 1
+  default_timestep: 2 * femtosecond
+  annihilate_electrostatics: true
+  annihilate_sterics: false
+  platform: CUDA
+systems:
+  solvation-system:
+    phase1_path:
+    - solvent_1.xml
+    - solvent_1.pdb
+    phase2_path:
+    - solvent_2.xml
+    - solvent_2.pdb
+    solvent_dsl: resname HOH
+protocols:
+  solvation-protocol:
+    solvent1:
+      alchemical_path: auto
+    solvent2:
+      alchemical_path: auto
+experiments:
+  system: solvation-system
+  protocol: solvation-protocol

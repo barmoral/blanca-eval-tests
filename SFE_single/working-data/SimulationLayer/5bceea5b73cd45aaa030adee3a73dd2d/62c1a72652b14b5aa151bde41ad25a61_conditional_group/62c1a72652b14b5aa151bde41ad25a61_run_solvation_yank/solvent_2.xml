@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<System openmmVersion="7.6" type="System" version="1">
+	<PeriodicBoxVectors>
+		<A x=".6534" y="0" z="0"/>
+		<B x="0" y=".6534" z="0"/>
+		<C x="0" y="0" z=".6534"/>
+	</PeriodicBoxVectors>
+	<Particles>
+		<Particle mass="12.01078"/>
+		<Particle mass="12.01078"/>
+		<Particle mass="12.01078"/>
+		<Particle mass="1.007947"/>
+		<Particle mass="1.007947"/>
+		<Particle mass="1.007947"/>
+		<Particle mass="1.007947"/>
+	</Particles>
+	<Constraints>
+		<Constraint d=".1084500073436" p1="0" p2="3"/>
+		<Constraint d=".10901395061090001" p1="2" p2="4"/>
+		<Constraint d=".10901395061090001" p1="2" p2="5"/>
+		<Constraint d=".10901395061090001" p1="2" p2="6"/>
+	</Constraints>
+	<Forces>
+		<Force forceGroup="0" name="PeriodicTorsionForce" type="PeriodicTorsionForce" usesPeriodic="0" version="2">
+			<Torsions>
+				<Torsion k="0" p1="0" p2="1" p3="2" p4="4" periodicity="1" phase="0"/>
+				<Torsion k="0" p1="0" p2="1" p3="2" p4="5" periodicity="1" phase="0"/>
+				<Torsion k="0" p1="0" p2="1" p3="2" p4="6" periodicity="1" phase="0"/>
+				<Torsion k="0" p1="2" p2="1" p3="0" p4="3" periodicity="1" phase="0"/>
+			</Torsions>
+		</Force>
+		<Force alpha="0" cutoff=".9" dispersionCorrection="1" ewaldTolerance=".0001" exceptionsUsePeriodic="0" forceGroup="0" includeDirectSpace="1" ljAlpha="0" ljnx="0" ljny="0" ljnz="0" method="0" name="NonbondedForce" nx="0" ny="0" nz="0" recipForceGroup="-1" rfDielectric="78.3" switchingDistance="-1" type="NonbondedForce" useSwitchingFunction="0" version="4">
+			<GlobalParameters/>
+			<ParticleOffsets/>
+			<ExceptionOffsets/>
+			<Particles>
+				<Particle eps=".87864" q="-.16384999480630671" sig=".3399669508423535"/>
+				<Particle eps=".87864" q="-.14089000251676356" sig=".3399669508423535"/>
+				<Particle eps=".45538911611061844" q="-.021649999810116633" sig=".3379531761626621"/>
+				<Particle eps=".06276" q=".1632799950561353" sig=".25996424595335105"/>
+				<Particle eps=".06602135607582665" q=".054370000692350526" sig=".2644543413268125"/>
+				<Particle eps=".06602135607582665" q=".054370000692350526" sig=".2644543413268125"/>
+				<Particle eps=".06602135607582665" q=".054370000692350526" sig=".2644543413268125"/>
+			</Particles>
+			<Exceptions>
+				<Exception eps="0" p1="0" p2="1" q="0" sig="1"/>
+				<Exception eps="0" p1="0" p2="2" q="0" sig="1"/>
+				<Exception eps="0" p1="1" p2="2" q="0" sig="1"/>
+				<Exception eps="0" p1="0" p2="3" q="0" sig="1"/>
+				<Exception eps="0" p1="1" p2="3" q="0" sig="1"/>
+				<Exception eps=".084528428541974" p1="2" p2="3" q="-.002945843218183145" sig=".29895871105800653"/>
+				<Exception eps=".12042529250791165" p1="0" p2="4" q="-.00742377027558682" sig=".30221064608458303"/>
+				<Exception eps="0" p1="1" p2="4" q="0" sig="1"/>
+				<Exception eps="0" p1="2" p2="4" q="0" sig="1"/>
+				<Exception eps=".12042529250791165" p1="0" p2="5" q="-.00742377027558682" sig=".30221064608458303"/>
+				<Exception eps="0" p1="1" p2="5" q="0" sig="1"/>
+				<Exception eps="0" p1="2" p2="5" q="0" sig="1"/>
+				<Exception eps="0" p1="4" p2="5" q="0" sig="1"/>
+				<Exception eps=".12042529250791165" p1="0" p2="6" q="-.00742377027558682" sig=".30221064608458303"/>
+				<Exception eps="0" p1="1" p2="6" q="0" sig="1"/>
+				<Exception eps="0" p1="2" p2="6" q="0" sig="1"/>
+				<Exception eps="0" p1="4" p2="6" q="0" sig="1"/>
+				<Exception eps="0" p1="5" p2="6" q="0" sig="1"/>
+			</Exceptions>
+		</Force>
+		<Force forceGroup="0" name="HarmonicBondForce" type="HarmonicBondForce" usesPeriodic="0" version="2">
+			<Bonds>
+				<Bond d=".1225366047596" k="982990.9339614105" p1="0" p2="1"/>
+				<Bond d=".15015864075950003" k="251239.8500216852" p1="1" p2="2"/>
+			</Bonds>
+		</Force>
+		<Force forceGroup="0" name="HarmonicAngleForce" type="HarmonicAngleForce" usesPeriodic="0" version="2">
+			<Angles>
+				<Angle a="3.1072474516907973" k="380.5012882570208" p1="0" p2="1" p3="2"/>
+				<Angle a="3.1072474516907973" k="380.5012882570208" p1="1" p2="0" p3="3"/>
+				<Angle a="1.9209652237730586" k="507.05196023285197" p1="1" p2="2" p3="4"/>
+				<Angle a="1.9209652237730586" k="507.05196023285197" p1="1" p2="2" p3="5"/>
+				<Angle a="1.9209652237730586" k="507.05196023285197" p1="1" p2="2" p3="6"/>
+				<Angle a="1.8951470183507508" k="314.14536559165447" p1="4" p2="2" p3="5"/>
+				<Angle a="1.8951470183507508" k="314.14536559165447" p1="4" p2="2" p3="6"/>
+				<Angle a="1.8951470183507508" k="314.14536559165447" p1="5" p2="2" p3="6"/>
+			</Angles>
+		</Force>
+	</Forces>
+</System>
